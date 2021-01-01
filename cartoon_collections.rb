@@ -18,5 +18,14 @@ end
 def find_the_cheese(food)       # code an argument here
   # the array below is here to help
   cheese_types = ["cheddar", "gouda", "camembert"]
+<<<<<<< HEAD
     food.find {|assorted_foods| cheese_types.include?(assorted_foods)}
+=======
+  food.include?(cheese_types)
+  if true
+    food.select {|assorted_foods| assorted_foods.include?(cheese_types).join(",")}
+  else
+    return nil
+  end
+>>>>>>> 18b390f5edb736807dcf14c013620e500475ea00
 end
